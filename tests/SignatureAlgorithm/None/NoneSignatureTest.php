@@ -30,7 +30,7 @@ final class NoneSignatureTest extends TestCase
 
         $signature = $none->sign($key, $data);
 
-        static::assertSame($signature, '');
+        static::assertSame('', $signature);
         static::assertTrue($none->verify($key, $data, $signature));
     }
 

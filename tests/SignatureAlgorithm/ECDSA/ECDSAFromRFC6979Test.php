@@ -13,6 +13,7 @@ use Jose\Component\Signature\Algorithm\SignatureAlgorithm;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
+use function sprintf;
 
 /**
  * @see https://tools.ietf.org/html/rfc6979#appendix-A.2.5

@@ -6,6 +6,7 @@ namespace Jose\Tests\Bundle\JoseFramework\TestBundle\Service;
 
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
+use function sprintf;
 
 final class MockClientCallback extends MockHttpClient
 {

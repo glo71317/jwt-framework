@@ -59,7 +59,7 @@ final class MessageBagTest extends TestCase
         $bag = new MessageBag();
         $bag->add(Message::high('Very important'));
 
-        static::assertSame(1, $bag->count());
+        static::assertCount(1, $bag);
         static::assertCount(1, $bag);
         static::assertCount(1, $bag->all());
         static::assertContainsOnlyInstancesOf(Message::class, $bag);

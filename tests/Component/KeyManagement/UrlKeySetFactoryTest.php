@@ -40,7 +40,7 @@ final class UrlKeySetFactoryTest extends TestCase
         $keyset = $this->getJKUFactory()
             ->loadFromUrl('https://foo.bar/keys');
 
-        static::assertSame(3, $keyset->count());
+        static::assertCount(3, $keyset);
     }
 
     #[Test]
@@ -87,7 +87,7 @@ final class UrlKeySetFactoryTest extends TestCase
         $keyset = $this->getX5UFactory()
             ->loadFromUrl('https://foo.bar/keys');
 
-        static::assertSame(3, $keyset->count());
+        static::assertCount(3, $keyset);
     }
 
     #[Test]

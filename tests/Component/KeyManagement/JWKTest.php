@@ -114,7 +114,7 @@ final class JWKTest extends TestCase
             json_encode($jwkset, JSON_THROW_ON_ERROR)
         );
         static::assertCount(2, $jwkset);
-        static::assertSame(2, $jwkset->count());
+        static::assertCount(2, $jwkset);
         static::assertTrue($jwkset->has('0123456789'));
         static::assertTrue($jwkset->has('9876543210'));
         static::assertFalse($jwkset->has(0));
@@ -128,11 +128,11 @@ final class JWKTest extends TestCase
         $jwkset = $jwkset->without('9876543210');
 
         static::assertCount(1, $jwkset);
-        static::assertSame(1, $jwkset->count());
+        static::assertCount(1, $jwkset);
 
         $jwkset = $jwkset->without('0123456789');
         static::assertCount(0, $jwkset);
-        static::assertSame(0, $jwkset->count());
+        static::assertCount(0, $jwkset);
     }
 
     #[Test]
