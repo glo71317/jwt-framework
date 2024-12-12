@@ -2,8 +2,6 @@ parameters:
 	level: max
 	paths:
 		- src
-	checkMissingIterableValueType: true
-	checkGenericClassInNonGenericObjectType: true
 	treatPhpDocTypesAsCertain: true
 	checkUninitializedProperties: true
 	checkDynamicProperties: true
