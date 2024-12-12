@@ -1271,6 +1271,26 @@ parameters:
 			path: src/Library/Core/Util/Base64UrlSafe.php
 
 		-
+			message: "#^Binary operation \"\\.\" between '30740201010420' and mixed results in an error\\.$#"
+			count: 1
+			path: src/Library/Core/Util/ECKey.php
+
+		-
+			message: "#^Binary operation \"\\.\" between '30770201010420' and mixed results in an error\\.$#"
+			count: 1
+			path: src/Library/Core/Util/ECKey.php
+
+		-
+			message: "#^Binary operation \"\\.\" between '3081a40201010430' and mixed results in an error\\.$#"
+			count: 1
+			path: src/Library/Core/Util/ECKey.php
+
+		-
+			message: "#^Binary operation \"\\.\" between '3081dc0201010442' and mixed results in an error\\.$#"
+			count: 1
+			path: src/Library/Core/Util/ECKey.php
+
+		-
 			message: "#^Method Jose\\\\Component\\\\Core\\\\Util\\\\ECKey\\:\\:createECKey\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Library/Core/Util/ECKey.php
@@ -1361,8 +1381,28 @@ parameters:
 			path: src/Library/Encryption/Algorithm/KeyEncryption/AbstractECDH.php
 
 		-
+			message: "#^Binary operation \"\\.\" between mixed and \"\\\\000\" results in an error\\.$#"
+			count: 2
+			path: src/Library/Encryption/Algorithm/KeyEncryption/PBES2AESKW.php
+
+		-
+			message: "#^Parameter \\#1 \\$algo of function hash_pbkdf2 expects non\\-falsy\\-string, string given\\.$#"
+			count: 2
+			path: src/Library/Encryption/Algorithm/KeyEncryption/PBES2AESKW.php
+
+		-
 			message: "#^Parameter \\#1 \\$length of function random_bytes expects int\\<1, max\\>, int given\\.$#"
 			count: 1
+			path: src/Library/Encryption/Algorithm/KeyEncryption/PBES2AESKW.php
+
+		-
+			message: "#^Parameter \\#4 \\$iterations of function hash_pbkdf2 expects int\\<1, max\\>, int given\\.$#"
+			count: 2
+			path: src/Library/Encryption/Algorithm/KeyEncryption/PBES2AESKW.php
+
+		-
+			message: "#^Parameter \\#5 \\$length of function hash_pbkdf2 expects int\\<0, max\\>, int given\\.$#"
+			count: 2
 			path: src/Library/Encryption/Algorithm/KeyEncryption/PBES2AESKW.php
 
 		-
