@@ -30,7 +30,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "8.3"
-          extensions: "json, mbstring, openssl, sqlite3, curl, uuid"
+          extensions: "gmp, json, mbstring, openssl, sqlite3, curl, uuid"
           tools: castor
 
       - name: "Checkout code"
@@ -79,7 +79,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "${{ matrix.php-version }}"
-          extensions: "json, mbstring, openssl, sqlite3, curl, uuid"
+          extensions: "gmp, json, mbstring, openssl, sqlite3, curl, uuid"
           tools: castor
           coverage: "xdebug"
 
@@ -106,7 +106,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "8.3"
-          extensions: "json, mbstring, openssl, sqlite3, curl, uuid"
+          extensions: "gmp, json, mbstring, openssl, sqlite3, curl, uuid"
           tools: castor
 
       - name: "Checkout code"
@@ -132,7 +132,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "8.3"
-          extensions: "json, mbstring, openssl, sqlite3, curl, uuid"
+          extensions: "gmp, json, mbstring, openssl, sqlite3, curl, uuid"
           tools: castor
 
       - name: "Checkout code"
@@ -161,7 +161,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "8.3"
-          extensions: "json, mbstring, openssl, sqlite3, curl, uuid"
+          extensions: "gmp, json, mbstring, openssl, sqlite3, curl, uuid"
           tools: castor
 
       - name: "Checkout code"
@@ -187,7 +187,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "8.3"
-          extensions: "json, mbstring, openssl, sqlite3, curl, uuid"
+          extensions: "gmp, json, mbstring, openssl, sqlite3, curl, uuid"
           tools: castor
           coverage: "xdebug"
 
